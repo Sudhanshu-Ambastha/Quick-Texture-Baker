@@ -1,8 +1,8 @@
 bl_info = {
     "name": "Quick Texture Baker",
     "author": "Sudhanshu Ambastha",
-    "version": (1, 0, 0),
-    "blender": (4, 0, 0),
+    "version": (1, 1, 0),
+    "blender": (5, 1, 0),  
     "location": "Shader Editor > Sidebar > Quick Texture Baker",
     "description": "Quickly create image texture nodes and bake textures from selected objects.",
     "category": "Material",

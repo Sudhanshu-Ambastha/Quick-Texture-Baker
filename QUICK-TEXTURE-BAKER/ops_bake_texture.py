@@ -59,4 +59,3 @@ def register():
 
 def unregister():
     bpy.utils.unregister_class(QTB_OT_BakeTexture)
-v

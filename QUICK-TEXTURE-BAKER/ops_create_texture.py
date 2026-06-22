@@ -7,7 +7,10 @@ def create_texture_node(context, image_name):
         return {'CANCELLED'}
 
     mat = obj.active_material
-    mat.use_nodes = True
+    if not mat.node_tree:
+        print("⚠️ The active material does not have a valid node tree.")
+        return {'CANCELLED'}
+        
     nodes = mat.node_tree.nodes
 
     if image_name in bpy.data.images:
